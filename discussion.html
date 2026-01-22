@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Discussion de Groupe | Communauté NextStep</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="wa-body">
+    <div class="wa-container">
+        <header class="wa-header">
+            <a href="index.html" style="color:white; margin-right: 15px;"><i class="fas fa-arrow-left"></i></a>
+            <img src="images/logo.png" alt="Logo NextStep" class="logo-img">
+            <div style="flex: 1; margin-left: 15px;">
+                <h4 style="margin: 0;">NextStep Leaders 🇧🇯</h4>
+                <span style="font-size: 0.8rem; opacity: 0.9;">Israel, Amina, Koffi, et 315 autres membres actifs.</span>
+            </div>
+            <div>
+                <i class="fas fa-video" style="margin-right: 20px;"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </header>
+
+        <main class="wa-chat-box" id="chatBox">
+            <div style="text-align: center; margin: 15px auto; opacity: 0.7; font-size: 0.85rem; background: rgba(255,255,255,0.9); padding: 10px 15px; border-radius: 15px; display: inline-block; max-width: 80%;">
+                <i class="fas fa-lock" style="margin-right: 5px;"></i> Messages chiffrés de bout en bout par l'écosystème NextStep.
+            </div>
+
+            <div class="msg received">
+                <div class="msg-sender Koffi">Koffi</div>
+                Salut l'équipe ! J'espère que tout le monde va bien ? Israel, on est tous hyper motivés par cette plateforme !
+                <span class="msg-time">10:05</span>
+            </div>
+            <div class="msg received">
+                <div class="msg-sender Amina">Amina</div>
+                Oui, carrément Koffi ! On parlait justement du prochain challenge hackathon. Israel, tu as des infos sur la date limite d'inscription ?
+                <span class="msg-time">10:08</span>
+            </div>
+
+            </main>
+
+        <footer class="wa-footer">
+            <button class="wa-btn"><i class="far fa-smile"></i></button>
+            <input type="text" id="chatInput" class="wa-input" placeholder="Écris ton message ici..." autocomplete="off">
+            <button class="wa-btn"><i class="fas fa-paperclip"></i></button>
+            <button class="wa-btn"><i class="fas fa-camera"></i></button>
+            <button class="wa-btn wa-send" onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
